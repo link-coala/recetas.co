@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Ideas</h1>
+<h1>Todas las recetas</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Titulo</th>
+      <th>Título</th>
       <th>Ingredientes</th>
-      <th>Preparacion</th>
-      <th>Region</th>
-      <th>Picture</th>
+      <th>Preparación</th>
+      <th>Región</th>
+      <th>Imagén</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,9 +22,9 @@
         <td><%= idea.preparacion %></td>
         <td><%= idea.region %></td>
         <td><%= idea.picture %></td>
-        <td><%= link_to 'Show', idea %></td>
-        <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', idea %></td>
+        <td><%= link_to 'Editar', edit_idea_path(idea) %></td>
+        <td><%= link_to 'Eliminar', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Idea', new_idea_path %>
+<%= link_to 'agregar una receta', new_idea_path %>

@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Titulo:</strong>
+  <strong>Título:</strong>
   <%= @idea.titulo %>
 </p>
 
@@ -11,19 +11,19 @@
 </p>
 
 <p>
-  <strong>Preparacion:</strong>
+  <strong>Preparación:</strong>
   <%= @idea.preparacion %>
 </p>
 
 <p>
-  <strong>Region:</strong>
+  <strong>Región:</strong>
   <%= @idea.region %>
 </p>
 
 <p>
-  <strong>Picture:</strong>
+  <strong>Imagén:</strong>
   <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 </p>
 
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+<%= link_to 'Editar', edit_idea_path(@idea) %> |
+<%= link_to 'Atrás', ideas_path %>
